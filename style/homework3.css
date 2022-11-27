@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.tabs {
+    width: 1170px;
+    margin: 20px auto;
+
+
+}
+
+h1 {
+    margin-left: 150px;
+    font-size: 30px;
+
+}
+
+p {
+    width: 600px;
+    float: left;
+    padding: 10px;
+    text-align: justify;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    border: 3px solid black;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    background: rgba(164, 56, 107, 0.57);
+    border-radius: 23px 0 23px 0;
+    position: relative;
+    top: -50px;
+    left: 220px;
+}
+
+button:hover {
+    box-shadow: rgba(164, 56, 107, 0.57) 0 0 20px 9px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs div {
+    display: none;
+    border: 1px solid #c47979;
+    box-shadow: #1d389b -13px 8px 20px 2px;
+
+    padding: 15px;
+
+}
+
+#tab-button-1:checked ~ #tab__content-1,
+#tab-button-2:checked ~ #tab__content-2,
+#tab-button-3:checked ~ #tab__content-3,
+#tab-button-4:checked ~ #tab__content-4,
+#tab-button-5:checked ~ #tab__content-5 {
+    display: block;
+}
+
+.tabs label {
+    display: inline-block;
+    font-size: 20px;
+    padding: 3px;
+    font-weight: bold;
+    color: #1d389b;
+}
+
+.tabs label:hover {
+    border-bottom: 1px solid white;
+    background: #c47425;
+    border-radius: 0 12px;
+}
+
+.tabs > input[type="radio"]:checked + label {
+    color: white;
+    border-bottom: 1px solid white;
+    background: #c47425;
+    border-radius: 0 12px;
+}
