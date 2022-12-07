@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tabs {
+    width: 1170px;
+    margin: 50px auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.tabs__header_one {
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+.tabs__paragraph_one {
+    width: 600px;
+    float: left;
+    padding: 10px;
+    text-align: justify;
+}
+
+.tabs_images {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.tabs__button {
+    width: 120px;
+    height: 30px;
+    background: rgba(164, 56, 107, 0.57);
+    border-radius: 23px 0 23px 0;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+    left: 220px;
+}
+
+.tabs__button:hover {
+    box-shadow: rgba(164, 56, 107, 0.57) 0 0 20px 9px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs div {
+    display: none;
+    border: 1px solid #c47979;
+    box-shadow: #a1a8bf -13px 8px 20px 2px;
+    padding: 15px;
+}
+
+#tab-button-1:checked ~ #tab__content-1,
+#tab-button-2:checked ~ #tab__content-2,
+#tab-button-3:checked ~ #tab__content-3,
+#tab-button-4:checked ~ #tab__content-4,
+#tab-button-5:checked ~ #tab__content-5 {
+    display: block;
+}
+
+.tabs label {
+    display: inline-block;
+    font-size: 20px;
+    padding: 3px;
+    font-weight: bold;
+    color: #1d389b;
+}
+
+.tabs label:hover {
+    border-bottom: 1px solid white;
+    background: #c47425;
+    border-radius: 0 12px;
+}
+
+.tabs > input[type="radio"]:checked + label {
+    color: white;
+    border-bottom: 1px solid white;
+    background: #c47425;
+    border-radius: 0 12px;
+}
+
+.header__level_one {
+    font-size: 36px;
+    color: black;
+    font-weight: 400;
+}
+
+.header__level_four {
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.header__level_five {
+    font-size: 18px;
+    color: #86878B;
+    font-weight: 400;
+}
+
+.main_paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 230px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#separator {
+    width: 170px;
+    border-bottom: 1px solid red;
+    margin: 50px auto 30px auto;
+
+}
+
+.content {
+    width: 100%;
+    height: 383px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.content__block {
+    width: 349px;
+    display: inline-block;
+    margin-right: 30px;
+    color: black;
+}
+
+.main__background {
+    background: #F5F5F5;
+}
+
+.main__header {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.main__header_item {
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+    text-align: center;
+
+
+}
+
+.header__main {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.header__price {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 90px;
+}
+
+.header__info {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
+}
+
+.line {
+    margin: 40px auto 30px;
+    width: 170px;
+    border-bottom: 2px solid red;
+}
+
+.white_line {
+    border-bottom: 2px solid white;
+}
+
+.item_black {
+    background: #333333;
+    color: white;
+    border: 2px solid #f5f5f5;
+}
+
+.header__free {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, .5);
+    line-height: 40px;
+
+}
+
+.main__item {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.main__item-1, .main__item-2, .main__item-3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 370px;
+    margin: 40px 30px 30px 0;
+
+}
+
+.main__list_item-1, .main__list_item-2, .main__list_item-3 {
+    border: 2px solid #FFFFFF;
+    line-height: 45px;
+}
+
+.main__item_hover:hover {
+    box-shadow: 0 0 20px 6px grey;
+    margin-top: 30px;
+}
+
+.main__content {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.message {
+    width: 370px;
+    height: 180px;
+    padding: 37px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 83px 15px 66px 15px;
+}
+.triangle{
+    position: relative;
+    bottom: 66px;
+    left: 45px;
+}
+.main__block_mid {
+    display: flex;
+    margin-left: 20px;
+}
+
+.main__content_name {
+    margin: 20px 0 0 20px;
+}
+
+.main__content_titul {
+    margin-left: 110px;
+}
+
+.main__content_ful {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.main__content_low {
+    width: 100%;
+    height: 445px;
+    background-image:  url("../img/background.png" ); /* поменять адрес*/
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.white {
+    color: white
+}
+
+.content__low_button {
+    width: 370px;
+    height: 58px;
+    position: relative;
+    left: 570px;
+    top: 200px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.content__low_button:active {
+    margin: 5px;
+    color: #95FF71FF;
+    border: 3px solid #95FF71FF;
+}
+
+form {
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 570px;
+    height: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+
+#message {
+    height: 230px;
+}
+
+.message_right {
+    position: relative;
+    left: 620px;
+    bottom: 300px;
+}
+
+.send_message {
+    width: 370px;
+    height: 58px;
+    background: #EC7979;
+    color: white;
+    margin: 0 -210px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    top: 35px;
+}
+
+.black__footer {
+    width: 100%;
+    height: 165px;
+    background: black;
+    margin-top: -170px;
+}
+
+.logo_soc-seti {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_img {
+    width: 44px;
+    height: 40px;
+    margin: 40px 10px 40px 10px;
+    box-sizing: content-box;
+}
+
+.main__header_item-2 {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
